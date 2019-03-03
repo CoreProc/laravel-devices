@@ -1,0 +1,50 @@
+{
+    "name": "coreproc/laravel-devices",
+    "description": "Store and handle devices connecting to your web application.",
+    "keywords": [
+        "coreproc",
+        "laravel-devices"
+    ],
+    "homepage": "https://github.com/coreproc/laravel-devices",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Bautista",
+            "email": "chris.bautista@coreproc.ph",
+            "homepage": "https://coreproc.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Coreproc\\Devices\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Coreproc\\Devices\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coreproc\\Devices\\DevicesServiceProvider"
+            ]
+        }
+    }
+}
